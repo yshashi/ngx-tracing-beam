@@ -1,5 +1,13 @@
 # ngx-tracing-beam
 
+<a href="https://ngxui.com" target="_blank" style="display: flex;gap: .5rem;align-items: center;cursor: pointer; padding: 0 0 0 0; height: fit-content;">
+  <img src="https://ngxui.com/assets/img/ngxui-logo.png" style="width: 64px;height: 64px;">
+  <p style="font-weight: bold; padding: 0; margin: 0; font-size: 4rem">NGXUI</p>
+</a>
+
+This Library is part of the NGXUI ecosystem. <br>
+View all available components at https://ngxui.com
+
 `@omnedia/ngx-tracing-beam` is an Angular component that renders a dynamic tracing beam that follows the user's scroll progress. This component is ideal for visually connecting different sections of content on a page, providing an interactive and engaging user experience.
 
 ## Features
@@ -22,21 +30,23 @@ npm install @omnedia/ngx-tracing-beam
 Import the `NgxTracingBeamComponent` in your Angular module or component:
 
 ```typescript
-import { NgxTracingBeamComponent } from '@omnedia/ngx-tracing-beam';
+import {NgxTracingBeamComponent} from '@omnedia/ngx-tracing-beam';
 
 @Component({
   ...
-  imports: [
-    ...
-    NgxTracingBeamComponent,
-  ],
+    imports:
+[
   ...
+    NgxTracingBeamComponent,
+],
+...
 })
 ```
 
 Use the component in your template:
 
 ```html
+
 <om-tracing-beam
   [strokeColor]="'#3498db'"
   [gradientTop]="'#ffcc00'"
@@ -65,6 +75,7 @@ Use the component in your template:
 ## API
 
 ```html
+
 <om-tracing-beam
   [strokeColor]="strokeColor"
   [gradientTop]="gradientTop"
@@ -89,6 +100,7 @@ Use the component in your template:
 ## Example
 
 ```html
+
 <om-tracing-beam [strokeColor]="'#e74c3c'" [gradientTop]="'#3498db'" [gradientMiddle]="'#2ecc71'" [gradientBottom]="'#9b59b6'">
   <div class="content">
     <h2>Scroll-Linked Content</h2>
@@ -106,6 +118,7 @@ When the om-tracing-beam is used in different scroll contexts, such as directly 
 This example shows how you can integrate the tracing beam within a scrollable div to ensure it functions correctly across multiple environments:
 
 ```html
+
 <div style="height: 700px; overflow-y: scroll;">
   <om-tracing-beam styleClass="nested-scroll-context">
     <div style="height: 2000px;">
@@ -120,6 +133,7 @@ This example shows how you can integrate the tracing beam within a scrollable di
 ## Styling
 
 ```html
+
 <om-tracing-beam styleClass="custom-beam-style">
   <div class="content">
     <h2>Styled Tracing Beam</h2>
