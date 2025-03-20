@@ -28,7 +28,7 @@ export class NgxTracingBeamComponent implements AfterViewInit, OnDestroy {
   style: any = {};
 
   @Input("animationDuration")
-  private animationDuration = 500;
+  animationDuration = 500;
 
   @Input("strokeColor")
   set strokeColorValue(color: string) {
